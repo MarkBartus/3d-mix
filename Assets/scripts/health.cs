@@ -28,6 +28,7 @@ public class health : MonoBehaviour
             //player is dead 
             //death animation plays
             anim.SetBool("IsDead", true);
+            Destroy(this.gameObject);
             //game over screen
         }
     }

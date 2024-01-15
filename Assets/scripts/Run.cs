@@ -13,13 +13,16 @@ public class Run : MonoBehaviour
     private float Svelocity = -2;    
     private Rigidbody rb;
     Animator anim;
-    bool isPunching;
+    public Transform attackpoint;
+    public float attackrange = 0.5f;
+    public LayerMask enemyLayers;
+    //bool isPunching;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        isPunching = false;
+        //isPunching = false;
     }
 
     // Update is called once per frame
@@ -37,9 +40,9 @@ public class Run : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            
-            isPunching = true;
-            
+            Attack();
+            //isPunching = true;
+
         }
 
 
@@ -75,15 +78,9 @@ public class Run : MonoBehaviour
         {
             playerTrans.Rotate(0, ro_speed * Time.deltaTime, 0);
         }
+   
 
-        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("RPunch"))
-        {
-            isPunching = false;          
-            anim.SetBool("idle", true);
-            anim.SetBool("RPunch", false);
-        }
-
-        DoPunch();
+        //DoPunch();
 
     }
 
@@ -94,7 +91,8 @@ public class Run : MonoBehaviour
             isOnGround = true;
         }
     }
-    void DoPunch ()
+    
+    /*void DoPunch ()
     {
         if (isPunching == true)
         {
@@ -108,6 +106,25 @@ public class Run : MonoBehaviour
                 isPunching = false;
             }
         }      
+    }
+    */
+    void Attack()
+    {
+        anim.SetTrigger("Attack");
+
+        Collider[] hitEnemies =Physics.OverlapSphere(attackpoint.position, attackrange, enemyLayers);
+
+        foreach(Collider enemy in hitEnemies)
+        {
+            Debug.Log("We hit" + enemy.name);
+        }
+    }
+    void OnDrawGizmosSelected()
+    {
+        if (attackpoint == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackpoint.position, attackrange);
     }
 }
 
