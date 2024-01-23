@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class health : MonoBehaviour
 {
@@ -52,6 +54,7 @@ public class health : MonoBehaviour
                 //death animation plays
                 anim.SetBool("IsDead", true);
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("SampleScene");
                 //game over screen
             }
         }
