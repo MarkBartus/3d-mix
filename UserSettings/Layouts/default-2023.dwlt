@@ -117,8 +117,8 @@ MonoBehaviour:
     y: 0
     width: 483
     height: 522
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -289,8 +289,8 @@ MonoBehaviour:
     y: 0
     width: 471
     height: 522
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -320,10 +320,10 @@ MonoBehaviour:
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
-  - {fileID: 20}
   - {fileID: 17}
+  - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -431,7 +431,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 438
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -515,11 +515,11 @@ MonoBehaviour:
     - e00: 0.55945945
       e01: 0
       e02: 0
-      e03: 40.973083
+      e03: 26.1893
       e10: 0
       e11: 0.55945945
       e12: 0
-      e13: 165.45956
+      e13: 169.4595
       e20: 0
       e21: 0
       e22: 1
@@ -598,10 +598,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 208}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6cf8ffffb0f9ffff22fbffff205c0000c65c0000
+      m_ExpandedIDs: 28aaffff02abffff02f7ffff46f8ffff22fbffff92c40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1101,9 +1101,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.119387, y: 38.963917, z: 8.687962}
+    m_Target: {x: -117.30876, y: 9.618179, z: -43.218067}
     speed: 2
-    m_Value: {x: -15.119387, y: 38.963917, z: 8.687962}
+    m_Value: {x: -117.30876, y: 9.618179, z: -43.218067}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1149,13 +1149,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.106051, y: 0.564367, z: -0.073360726, w: -0.8154162}
+    m_Target: {x: -0.20958236, y: 0.74339324, z: -0.2711781, w: -0.5744185}
     speed: 2
-    m_Value: {x: -0.10504264, y: 0.5620153, z: -0.07219771, w: -0.8172469}
+    m_Value: {x: -0.20865873, y: 0.74245554, z: -0.2683148, w: -0.5772595}
   m_Size:
-    m_Target: 14.925263
+    m_Target: 97.749756
     speed: 2
-    m_Value: 14.925263
+    m_Value: 102.35577
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1325,9 +1325,9 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets/scripts
+    - Assets/Buildings/Materials
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1337,16 +1337,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/scripts
+  - Assets/Buildings/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\temp\mark bartus\3d-mix
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a630000
-    m_LastClickedID: 25482
-    m_ExpandedIDs: 000000006a6300008c63000000ca9a3bffffff7f
+    m_SelectedIDs: 36c20000
+    m_LastClickedID: 49718
+    m_ExpandedIDs: 0000000068630000806300008a63000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1374,7 +1374,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a630000
+    m_ExpandedIDs: 0000000068630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1402,7 +1402,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300006a8b0000047b0000be640000c85c00008e710000bee1000000000000ceaf000010570100c8630000c2630000bc630000
+    m_ExpandedInstanceIDs: c62300006a8b0000047b0000be640000c85c00008e710000bee10000ceaf000010570100c8630000c2630000bc63000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1504,4 +1504,4 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 23646
+  m_LastSelectedObjectID: -30904
