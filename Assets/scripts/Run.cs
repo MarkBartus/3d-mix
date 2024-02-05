@@ -16,6 +16,7 @@ public class Run : MonoBehaviour
     public Transform attackpoint;
     public float attackrange = 0.5f;
     public LayerMask enemyLayers;
+  
     //bool isPunching;
     // Start is called before the first frame update
     void Start()
@@ -23,10 +24,12 @@ public class Run : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         //isPunching = false;
+        
     }
 
-    // Update is called once per frame
-    void Update()
+
+// Update is called once per frame
+void Update()
     {
         anim.SetBool("idle", true);
         anim.SetBool("run", false);
@@ -126,5 +129,6 @@ public class Run : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackpoint.position, attackrange);
     }
+
 }
 

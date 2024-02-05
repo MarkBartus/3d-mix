@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class health : MonoBehaviour
 {
@@ -46,12 +48,14 @@ public class health : MonoBehaviour
         if (col.CompareTag("barrier"))
         {
             Health--;
+            FindObjectOfType<AudioManager>().Play("footstep");
             if (Health <= 0)
             {
                 //player is dead 
                 //death animation plays
                 anim.SetBool("IsDead", true);
                 Destroy(this.gameObject);
+                SceneManager.LoadScene("SampleScene");
                 //game over screen
             }
         }
